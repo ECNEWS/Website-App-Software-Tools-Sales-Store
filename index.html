@@ -1,1 +1,173 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website, App, Software Tools Sales Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00d4ff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ff007a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00d4ff;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff007a;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background: #00d4ff;
+            border: none;
+            border-radius: 5px;
+            color: #1a1a2e;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .hero button:hover {
+            background: #ff007a;
+            color: #fff;
+        }
+        .products {
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background: #2a2a4e;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #00d4ff;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            color: #00d4ff;
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #b0b0b0;
+            margin: 5px 0;
+        }
+        .product-card button {
+            padding: 10px 20px;
+            background: #ff007a;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .product-card button:hover {
+            background: #00d4ff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-top: 2px solid #00d4ff;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+            color: #b0b0b0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website, App & Software Tools Store</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Explore Premium Digital Solutions</h2>
+        <p>Buy the best websites, apps, and software tools for your needs!</p>
+        <button>Shop Now</button>
+    </section>
+    <section class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Website Template">
+            <h3>Custom Website</h3>
+            <p>₹5000 - Fully responsive website for your business.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7" alt="Mobile App">
+            <h3>Mobile App</h3>
+            <p>₹8000 - Cross-platform app for iOS and Android.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1531973576160-0b4fd1ff2f1b" alt="Software Tool">
+            <h3>Software Tool</h3>
+            <p>₹3000 - Productivity tool for your team.</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Website, App & Software Tools Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
